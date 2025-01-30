@@ -27,8 +27,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "ko",
+    locales: ["ko"],
   },
 
   presets: [
@@ -79,7 +79,13 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "사이드 프로젝트",
+          label: "프로젝트",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "devNoteSidebar",
+          position: "left",
+          label: "개발노트",
         },
         {
           to: "/blog",
@@ -90,34 +96,7 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      links: [
-        // {
-        //   title: "Docs",
-        //   items: [
-        //     {
-        //       label: "Tutorial",
-        //       to: "/docs/intro",
-        //     },
-        //   ],
-        // },
-        // {
-        //   title: "Community",
-        //   items: [
-        //     {
-        //       label: "Stack Overflow",
-        //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
-        //     },
-        //     {
-        //       label: "Discord",
-        //       href: "https://discordapp.com/invite/docusaurus",
-        //     },
-        //     {
-        //       label: "X",
-        //       href: "https://x.com/docusaurus",
-        //     },
-        //   ],
-        // },
-      ],
+      links: [],
       copyright: `Copyright © ${new Date().getFullYear()} Lee Hyungi, Built with Docusaurus.`,
     },
     prism: {
