@@ -11,7 +11,7 @@ import { FeatureItem } from "../types";
 
 function HomepageMainContents({ title, path, children }: FeatureItem) {
   return (
-    <div className={clsx("container", styles.HomePageMainContentsContainer)}>
+    <div className={clsx("container", styles.homePageMainContentsContainer)}>
       <img className="profileImg" src={path} />
       <section>
         <h2>{title}</h2>
@@ -24,7 +24,7 @@ function HomepageMainContents({ title, path, children }: FeatureItem) {
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx("hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {/* {siteConfig.title} */}

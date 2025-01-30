@@ -1,10 +1,10 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 /* 기본값은 모바일로 설정 */
-.HomePageMainContentsContainer {
+
+header {
+  border-bottom: 1px solid black;
+}
+
+.homePageMainContentsContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,16 +13,14 @@
 
 /* 테블릿 (768px 이상) */
 @media (min-width: 768px) {
-  .HomePageMainContentsContainer {
-    display: flex;
+  .homePageMainContentsContainer {
     flex-direction: row;
   }
 }
 
 /* 데스크탑 (1025px 이상) */
 @media (min-width: 1025px) {
-  .HomePageMainContentsContainer {
-    display: flex;
+  .homePageMainContentsContainer {
     flex-direction: row;
   }
 }

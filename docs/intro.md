@@ -1,47 +1,89 @@
+## Docusaurus를 활용해서 포트폴리오 + 블로그 운영
+
+전혀 감점 요소가 아니야. 오히려 Docusaurus를 활용해서 **포트폴리오, 블로그, 사이드 프로젝트, 이력서**를 통합적으로 관리하는 것은 강점이 될 수 있어. 특히, 너처럼 **React + TypeScript 기반**으로 개발하려던 계획과도 잘 맞고, Docusaurus가 정적 사이트 생성기(SSG)라서 **속도도 빠르고 유지보수도 편리**하다는 장점이 있어.
+
 ---
-sidebar_position: 1
+
+## ✅ **Docusaurus를 활용한 포트폴리오의 장점**
+
+### 1. **기술 블로그와 포트폴리오를 하나로 통합 가능**
+
+- 사이드 프로젝트, 기술 블로그, 이력서를 같은 플랫폼에서 관리하면, **일관된 브랜드**를 유지할 수 있음.
+- 블로그에 작성한 글과 프로젝트 문서를 함께 보여줄 수 있어 면접관이 참고하기 쉬움.
+
+### 2. **Markdown 기반으로 빠르게 문서화 가능**
+
+- 일반적인 포트폴리오 웹사이트는 페이지를 직접 구현해야 하지만, Docusaurus를 쓰면 **Markdown으로 쉽게 문서를 정리**할 수 있음.
+- 사이드 프로젝트를 기술 블로그처럼 문서화하면서 **기획 → 개발 → 배포 과정을 체계적으로 정리**할 수 있음.
+
+### 3. **정적 사이트라 유지보수 부담이 적음**
+
+- Next.js나 Gatsby 같은 SSR/CSR 기반 프레임워크를 쓰는 것보다, 정적 사이트를 활용하면 **속도도 빠르고 유지보수도 편리**함.
+- Netlify, Vercel, GitHub Pages 같은 곳에 배포하기도 편리.
+
+### 4. **React + TypeScript로 커스터마이징 가능**
+
+- 만약 기본 테마로 만족하지 못하면 **React + TypeScript로 직접 컴포넌트를 개발해서 확장 가능**.
+- 사이드 프로젝트의 UI/UX를 직접 구현할 수 있다는 점에서 개인 브랜딩에도 긍정적.
+
+### 5. **검색 기능과 문서 구조화 기능이 강력**
+
+- 포트폴리오뿐만 아니라, 검색 가능한 블로그 + 프로젝트 문서까지 포함되면 **체계적인 기술 문서 관리 능력**을 보여줄 수 있음.
+
 ---
 
-# Tutorial Intro-1
+## 🚨 **이직할 때 감점 요소가 될까?**
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**절대 아니다!** 오히려 면접관 입장에서 보면 **체계적인 문서화 능력과 기술 공유 문화**를 보여줄 수 있어서 **가산점이 될 가능성이 높아**.
 
-## Getting Started
+### 🔹 오히려 좋은 인상을 줄 수 있는 이유
 
-Get started by **creating a new site**.
+1. **React + TypeScript 활용 능력을 입증할 수 있음**  
+   → 직접 커스터마이징한 컴포넌트나 기능이 있으면 더욱 강점이 됨.
+2. **문서화 및 기술 공유 역량을 강조할 수 있음**  
+   → 개발자 블로그를 운영하면서 글을 작성한 경험은 **팀 협업 시 지식 공유, 기술 문서 작성 역량**으로 연결됨.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+3. **GitHub Actions, Netlify/Vercel 같은 배포 경험까지 포함 가능**  
+   → CI/CD까지 연계하면 **개발 + 운영 경험까지 보여줄 수 있음**.
 
-### What you'll need
+4. **포트폴리오를 단순한 웹사이트가 아니라, '기술적인 프로젝트'로 만들 수 있음**  
+   → Docusaurus를 단순히 쓰는 것에 그치지 않고, 직접 테마를 수정하거나 플러그인을 개발하는 방식으로 커스터마이징하면 더욱 강한 인상을 줄 수 있음.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+---
 
-## Generate a new site
+## 🔥 **어떻게 하면 더 강력한 포트폴리오가 될까?**
 
-Generate a new Docusaurus site using the **classic template**.
+### 1️⃣ **기본 테마에서 벗어나 커스터마이징하기**
 
-The classic template will automatically be added to your project after you run the command:
+- 기본 Docusaurus 테마를 그대로 쓰기보다는, **Tailwind CSS 또는 자체 스타일링을 추가**해서 디자인 차별화.
+- 예를 들어, `@docusaurus/theme-classic`을 커스텀해서 **UI를 포트폴리오 느낌 나게 변경**.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### 2️⃣ **사이드 프로젝트 페이지를 더 인터랙티브하게 만들기**
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- 프로젝트마다 **Live Demo, GitHub Repo, 기술 스택 설명, 주요 기능 소개** 등을 정리한 페이지 추가.
+- `react-three-fiber` 같은 라이브러리를 써서 **간단한 애니메이션/비주얼 효과 추가**도 고려.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+### 3️⃣ **기술 블로그를 정리해서 면접에서 활용하기**
 
-## Start your site
+- 특정 기술을 학습한 과정, 트러블슈팅 경험, 개발 과정에서 개선한 점 등을 블로그 글로 정리.
+- **면접에서 "이 블로그 글을 참고해주세요"** 하면 좋은 인상을 줄 수 있음.
 
-Run the development server:
+### 4️⃣ **CI/CD까지 포함하여 배포 자동화**
 
-```bash
-cd my-website
-npm run start
-```
+- GitHub Actions + Vercel/Netlify로 **자동 배포 설정**.
+- 이 과정에서 CI/CD 구축 경험을 어필할 수 있음.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+---
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+## ✅ **결론: Docusaurus 기반 포트폴리오는 강력한 무기**
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- 감점 요소가 아니라 **오히려 체계적인 기술 관리 능력을 보여줄 수 있는 강점**.
+- 단순한 정적 페이지를 넘어, **기술 블로그 + 포트폴리오 + 프로젝트 문서화 + 배포 경험**까지 모두 포함 가능.
+- 다만, **기본 테마 그대로 쓰지 말고, 커스터마이징하고 인터랙티브한 요소를 추가하면 더욱 좋음**.
+
+---
+
+### 💡 **최종 추천**
+
+> **Docusaurus 기반으로 시작하되, 커스터마이징을 해서 디자인을 개선하고, 프로젝트와 블로그를 통합적으로 관리하는 형태로 발전시키는 게 최선의 방법**.  
+> 이렇게 하면 **React + TypeScript 개발 경험**을 강조하면서도, **기술 문서화 역량과 배포 경험**까지 어필할 수 있음. 🚀

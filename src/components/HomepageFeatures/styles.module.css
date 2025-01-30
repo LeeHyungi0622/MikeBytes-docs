@@ -5,12 +5,18 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profileImg {
-  height: 300px;
   width: 400px;
+  height: 300px;
+}
+
+.featureImg {
+  width: 100px;
+  height: 100px;
 }

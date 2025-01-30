@@ -6,46 +6,42 @@ import { FeatureItem } from "@site/src/types";
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: (
+    title: "UX/UI",
+    path: require("@site/static/img/uiux-icon.png").default,
+    children: <>사용자 경험(UX)를 끊임없이 고려하여 UI를 개발합니다.</>,
+  },
+  {
+    title: "웹 표준과 접근성",
+    path: require("@site/static/img/web_standard_a11y.png").default,
+    children: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        W3C HTML5 표준을 이해하고 있으며, 시각장애인이나 정보에 대한
+        접근성(a11y)이 떨어지는 사람들이 모두 편하게 이용할 수 있는 개발을
+        지향합니다.
       </>
     ),
   },
   {
-    title: "Focus on What Matters",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: (
+    title: "프론트엔드 개발",
+    path: require("@site/static/img/frontend_performance_opt.png").default,
+    children: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: "Powered by React",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        단순 UI/UX가 아닌 렌더링 최적화를 통한 성능개선을 고려하여 웹
+        프론트엔드를 개발합니다.
       </>
     ),
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, path, children }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className="">
+        <section className={styles.featureSection}>
+          <img className={styles.featureImg} src={path} alt="" />
+          <span>{title}</span>
+        </section>
+        <p>{children}</p>
       </div>
     </div>
   );
