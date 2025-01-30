@@ -68,7 +68,8 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
+      title:
+        "체계적으로 정리하고 구조화하는 것을 즐기며, 이를 강점으로 삼는 개발자",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
@@ -78,13 +79,12 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "사이드 프로젝트",
         },
-        { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
-          position: "right",
+          to: "/blog",
+          label: "블로그",
+          position: "left",
         },
       ],
     },
@@ -114,19 +114,6 @@ const config: Config = {
             {
               label: "X",
               href: "https://x.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
             },
           ],
         },

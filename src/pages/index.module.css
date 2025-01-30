@@ -3,21 +3,26 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+/* 기본값은 모바일로 설정 */
+.HomePageMainContentsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+/* 테블릿 (768px 이상) */
+@media (min-width: 768px) {
+  .HomePageMainContentsContainer {
+    display: flex;
+    flex-direction: row;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* 데스크탑 (1025px 이상) */
+@media (min-width: 1025px) {
+  .HomePageMainContentsContainer {
+    display: flex;
+    flex-direction: row;
+  }
 }
