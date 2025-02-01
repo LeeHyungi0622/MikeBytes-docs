@@ -7,9 +7,10 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
-import { FeatureItem } from "../types";
+import { FeatureItemType } from "../types";
+import Slider from "../components/Slide/Slider";
 
-function HomepageMainContents({ title, path, children }: FeatureItem) {
+function HomepageMainContents({ title, path, children }: FeatureItemType) {
   return (
     <div className={clsx("container", styles.homePageMainContentsContainer)}>
       <img className="profileImg" src={path} />
@@ -28,15 +29,17 @@ function HomepageHeader() {
       <div className="container">
         <Heading as="h1" className="hero__title">
           {/* {siteConfig.title} */}
-          <HomepageMainContents
-            title="사용자 경험을 최우선으로 하는 프론트엔드 개발자"
-            path={require("@site/static/img/profile-img.png").default}
-          >
-            <span className={styles.homePageMainContentsDesc}>
-              기획부터 개발 그리고 배포까지 경험한 시야로, <br />더 나은 개발을
-              고민합니다.
-            </span>
-          </HomepageMainContents>
+          <Slider>
+            <HomepageMainContents
+              title="사용자 경험을 최우선으로 하는 프론트엔드 개발자"
+              path={require("@site/static/img/profile-img.png").default}
+            >
+              <span className={styles.homePageMainContentsDesc}>
+                기획부터 개발 그리고 배포까지 경험한 시야로, <br />더 나은
+                개발을 고민합니다.
+              </span>
+            </HomepageMainContents>
+          </Slider>
           <span className={styles.tmpText}>
             Swiper.js library를 활용해서 "Panorama slider" 또는 "Grid
             slider"형태 또는
@@ -47,6 +50,7 @@ function HomepageHeader() {
             <br />
           </span>
         </Heading>
+        <div></div>
         {/* <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
