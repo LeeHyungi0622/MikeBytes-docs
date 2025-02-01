@@ -11,6 +11,16 @@ header {
   align-items: center;
 }
 
+.homePageMainContentsDesc {
+  font-size: 35px;
+}
+
+.tmpText {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+}
+
 /* 테블릿 (768px 이상) */
 @media (min-width: 768px) {
   .homePageMainContentsContainer {

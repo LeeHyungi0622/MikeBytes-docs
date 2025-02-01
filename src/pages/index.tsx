@@ -32,11 +32,20 @@ function HomepageHeader() {
             title="사용자 경험을 최우선으로 하는 프론트엔드 개발자"
             path={require("@site/static/img/profile-img.png").default}
           >
-            <span>
-              기획부터 개발 그리고 배포까지 경험한 시야로, 더 나은 개발을
+            <span className={styles.homePageMainContentsDesc}>
+              기획부터 개발 그리고 배포까지 경험한 시야로, <br />더 나은 개발을
               고민합니다.
             </span>
           </HomepageMainContents>
+          <span className={styles.tmpText}>
+            Swiper.js library를 활용해서 "Panorama slider" 또는 "Grid
+            slider"형태 또는
+            <br />
+            "Autoplay progress(interval 시간 우측 하단 표기)" 또는 "Parallax
+            slider"형태(좌측 상단에 구체적인 설명 작성 가능-버튼 배치해서
+            설명으로 바로 갈 수 있게 구성 가능)로
+            <br />
+          </span>
         </Heading>
         {/* <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
