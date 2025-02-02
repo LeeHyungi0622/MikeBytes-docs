@@ -2,9 +2,9 @@ import type { ReactNode } from "react";
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
-import { FeatureItem } from "@site/src/types";
+import { FeatureItemType } from "@site/src/types";
 
-const FeatureList: FeatureItem[] = [
+const FeatureList: FeatureItemType[] = [
   {
     title: "UX/UI",
     path: require("@site/static/img/uiux-icon.png").default,
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({ title, path, children }: FeatureItem) {
+function Feature({ title, path, children }: FeatureItemType) {
   return (
     <div className={clsx("col col--4")}>
       <div className="">
