@@ -88,6 +88,12 @@ const config: Config = {
           label: "개발노트",
         },
         {
+          type: "docSidebar",
+          sidebarId: "dailyReportSidebar",
+          position: "left",
+          label: "일일 기록지",
+        },
+        {
           to: "/blog",
           label: "블로그",
           position: "left",
