@@ -77,6 +77,12 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
+          sidebarId: "devProcessSidebar",
+          position: "left",
+          label: "개발 프로세스",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
           label: "프로젝트",
