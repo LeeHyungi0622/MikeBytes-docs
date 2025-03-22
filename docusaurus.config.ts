@@ -9,6 +9,13 @@ const config: Config = {
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
+  stylesheets: [
+    {
+      href: "/css/custom.css",
+      types: "text/css",
+    },
+  ],
+
   // Set the production url of your site here
   url: "https://mikebytes-docs.netlify.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
